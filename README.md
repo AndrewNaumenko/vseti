@@ -1,7 +1,7 @@
 ﻿# vseti.by
 **vseti.by** - это онлайн магазин электроники. 
 
-[Проект](https://github.com/AndrewNaumenko/vseti.git/vseti) 
+[Проект](https://github.com/AndrewNaumenko/vseti/tree/master/vseti.by) 
 
 [Диаграммы](https://github.com/AndrewNaumenko/vseti/tree/master/Диаграммы) 
 
