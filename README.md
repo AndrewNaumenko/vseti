@@ -3,7 +3,7 @@
 
 [Проект](https://github.com/AndrewNaumenko/vseti.git/vseti) 
 
-[Диаграммы]https://github.com/AndrewNaumenko/vseti/tree/master/Диаграммы) 
+[Диаграммы](https://github.com/AndrewNaumenko/vseti/tree/master/Диаграммы) 
 
 Язык - Java . IDE - IntelliJ IDEA. Используемые фреймворки: Spring,Angular. СУБД - MySql.
 
