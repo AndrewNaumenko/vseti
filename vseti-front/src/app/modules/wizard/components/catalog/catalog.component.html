@@ -1,0 +1,20 @@
+<div class="offer-component">
+<div *ngFor="let offer of (offersList$ | async)">
+  <div>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>{{offer.name}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image class="offer-image" src="{{offer.image}}" alt="phone photo">
+      <mat-card-content>
+        <p>
+          ${{offer.price}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button class="add-button">Add</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+</div>

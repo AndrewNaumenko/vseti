@@ -1,0 +1,184 @@
+{
+  "offers": [
+    {
+      "id": "1",
+      "name": "Apple AirPods 2",
+      "description": "test1",
+      "price": "123",
+      "image": "../../../assets/images/apple_airpods_2.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Samsung Galaxy Buds",
+      "description": "test2",
+      "price": "122",
+      "image": "../assets/images/samsung_galaxy_buds.jpeg"
+    },
+    {
+      "id": "3",
+      "name": "SVEN AP-B510MV",
+      "description": "test3",
+      "price": "12",
+      "image": "../assets/images/sven_ap-b510mv.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "Xiaomi Redmi AirDots",
+      "description": "test4",
+      "price": "125",
+      "image": "../assets/images/xiaomi_redmi_airdots.jpeg"
+    },
+    {
+      "id": "5",
+      "name": " Sony WH-CH500",
+      "description": "test5",
+      "price": "1234",
+      "image": "../assets/images/sony_wh_ch500.jpeg"
+    },
+    {
+      "id": "5",
+      "name": " Sony WH-CH500",
+      "description": "test5",
+      "price": "1234",
+      "image": "../assets/images/sony_wh_ch500.jpeg"
+    },
+    {
+      "id": "5",
+      "name": " Sony WH-CH500",
+      "description": "test5",
+      "price": "1234",
+      "image": "../assets/images/sony_wh_ch500.jpeg"
+    },
+    {
+      "id": "5",
+      "name": " Sony WH-CH500",
+      "description": "test5",
+      "price": "1234",
+      "image": "../assets/images/sony_wh_ch500.jpeg"
+    },
+    {
+      "id": "5",
+      "name": " Sony WH-CH500",
+      "description": "test5",
+      "price": "1234",
+      "image": "../assets/images/sony_wh_ch500.jpeg"
+    },
+    {
+      "id": "5",
+      "name": " Sony WH-CH500",
+      "description": "test5",
+      "price": "1234",
+      "image": "../assets/images/sony_wh_ch500.jpeg"
+    }
+  ],
+  "users": [
+    {
+      "email": "shulga.sasha.new@gmail.com",
+      "login": "wwqwq",
+      "password": "2222222222222",
+      "id": 1
+    },
+    {
+      "email": "sasasa@sd",
+      "login": "sasasa",
+      "password": "222222222",
+      "id": 2
+    },
+    {
+      "email": "try@gmail.com",
+      "login": "vitaliy",
+      "password": "11111111",
+      "id": 3
+    },
+    {
+      "email": "new@fdfd",
+      "login": "sdsdsdsd",
+      "password": "2222222222222",
+      "id": 4
+    },
+    {
+      "email": "dfdfdfdfdf@ddd",
+      "login": "tttttttttttt",
+      "password": "sssssssssss",
+      "id": 5
+    },
+    {
+      "email": "kkkkkk@sd",
+      "login": "oooooo",
+      "password": "33333333",
+      "id": 6
+    },
+    {
+      "email": "debug@sds",
+      "login": "debuger",
+      "password": "33333333",
+      "id": 7
+    },
+    {
+      "email": "nnnn@fff",
+      "login": "nnn",
+      "password": "nnnnnnnn",
+      "id": 8
+    },
+    {
+      "email": "nnnn@fff",
+      "login": "nnn",
+      "password": "nnnnnnnn",
+      "id": 9
+    },
+    {
+      "email": "nnnn@fff",
+      "login": "nnn",
+      "password": "nnnnnnnn",
+      "id": 11
+    },
+    {
+      "email": "nnnn@fff",
+      "login": "nnn",
+      "password": "nnnnnnnn",
+      "id": 12
+    },
+    {
+      "email": "aaaaaaaaaa@aa",
+      "login": "aaaaa",
+      "password": "aaaaaa",
+      "id": 13
+    },
+    {
+      "email": "aaaaaaaaaa@aa",
+      "login": "aaaaa",
+      "password": "aaaaaa",
+      "id": 14
+    },
+    {
+      "email": "aaaaaaaaaa@aa",
+      "login": "aaaaa",
+      "password": "aaaaaa",
+      "id": 15
+    },
+    {
+      "email": "ggg@ddd",
+      "login": "gggg",
+      "password": "ggggggg",
+      "id": 16
+    },
+    {
+      "email": "uuuuuuuu@ddd",
+      "login": "uuuuuuu",
+      "password": "uuuuuuuu",
+      "id": 17
+    },
+    {
+      "email": "pobozhnaya082@gmail.com",
+      "login": "nastya",
+      "password": "111111",
+      "id": 18
+    },
+    {
+      "email": "masha@gmail.com",
+      "login": "masha",
+      "password": "111111",
+      "id": 19
+    }
+  ]
+}
