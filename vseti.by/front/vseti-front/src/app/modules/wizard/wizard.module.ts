@@ -1,44 +1,24 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {SharedModule} from '../shared/shared.module';
 import {WizardComponent} from './wizard.component';
-import {CatalogComponent} from './components/catalog/catalog.component';
-import {ReactiveFormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
-import {MatButtonModule, MatCardModule, MatInputModule} from '@angular/material';
+import {RoleGuard} from '../../guards/role.guard';
 
 const routes: Routes = [
   {
-    path: '', component: WizardComponent,
-    children: [
-      {path: '', redirectTo: 'catalog'},
-      {path: 'catalog', component: CatalogComponent}
-    ]
+    path: '', component: WizardComponent, canActivate: [RoleGuard]
   },
-  {path: '**', redirectTo: 'catalog'}
 ];
 
-const materialModules = [
-  MatCardModule,
-  ReactiveFormsModule,
-  MatInputModule,
-  MatButtonModule
-];
-
-const ngCoreModules = [
-  CommonModule
-];
 
 @NgModule({
   declarations: [
-    WizardComponent,
-    CatalogComponent
+    WizardComponent
   ],
   imports: [
     RouterModule.forChild(routes),
-    ngCoreModules,
-    HttpClientModule,
-    materialModules
-  ]
+    SharedModule
+  ],
+  providers: []
 })
-export class WizardModule { }
+export class WizardModule {}

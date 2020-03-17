@@ -1,0 +1,36 @@
+<div class="show-center">
+  <mat-card class="card">
+    <mat-card-header>
+      <mat-card-title>Registration form</mat-card-title>
+    </mat-card-header>
+
+    <form [formGroup]="registerFormGroup" (ngSubmit)="onSubmit()">
+      <mat-card-content>
+        <mat-form-field>
+          <input matInput placeholder="Email" [formControlName]="'email'" required>
+          <mat-error *ngIf="registerFormGroup.get('email').invalid">{{getRequiredError('email') || getEmailError('email')}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Name" [formControlName]="'name'" required>
+          <mat-error *ngIf="registerFormGroup.get('name').invalid">{{getRequiredError('name')}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Surname" [formControlName]="'surname'" required>
+          <mat-error *ngIf="registerFormGroup.get('surname').invalid">{{getRequiredError('surname')}}</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="password" placeholder="Password" [formControlName]="'password'" required>
+          <mat-error *ngIf="registerFormGroup.get('password').invalid">{{getRequiredError('password') || getMinLengthError('password', 6)}}</mat-error>
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button type="submit" [disabled]="!registerFormGroup.valid">Sign up</button>
+      </mat-card-actions>
+    </form>
+
+    <mat-card-footer>
+      Do you have an account?
+      <a routerLink="/auth/login">Log in</a>
+    </mat-card-footer>
+  </mat-card>
+</div>
