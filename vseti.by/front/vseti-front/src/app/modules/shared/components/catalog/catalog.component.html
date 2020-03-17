@@ -1,0 +1,27 @@
+<div *ngIf="isLoading|async" class="parent-center">
+  <mat-spinner>
+  </mat-spinner>
+</div>
+<div *ngIf="!(isLoading|async)">
+  <div class="catalog-container" *ngIf="(offersFromServer)">
+    <div *ngIf="this.role === 'admin'">
+      <div class="create-offer">
+        <mat-card>
+          <mat-card-content>
+            <button mat-menu-item (click)="createOffer()">
+              <mat-icon>note_add</mat-icon>
+              <span>Add offer to catalog</span>
+            </button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+    <div class="filters">
+      <app-filter [offersFromServer]="offersFromServer"></app-filter>
+    </div>
+    <div class="offers">
+      <app-offer *ngFor="let offer of filteredOffersFromServer" [offer]="offer" [role]="role">
+      </app-offer>
+    </div>
+  </div>
+</div>

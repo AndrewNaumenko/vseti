@@ -1,0 +1,31 @@
+<div class="filter-container">
+  <div class="filter">
+    <h2>Search</h2>
+    <mat-form-field>
+      <input matInput [(ngModel)]="searchText" placeholder="search text" (input)="searchTextChange()">
+    </mat-form-field>
+  </div>
+
+  <form [formGroup]='form' (submit)="submit()">
+    <div class="filter">
+      <h3>Manufacturer</h3>
+      <div class="manufacturer-section">
+        <section formArrayName="category" *ngFor="let elem of form.controls.category.controls; let i = index">
+          <mat-checkbox [formControlName]="i">{{categoryList[i]}}</mat-checkbox>
+        </section>
+      </div>
+    </div>
+
+    <div class="filter">
+      <h3>Price</h3>
+      <mat-form-field>
+        <input matInput type="number" min="0" placeholder="min price" [formControlName]="'minPrice'">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput type="number" min="{{form.value['minPrice'] || 0}}" placeholder="max price" [formControlName]="'maxPrice'">
+      </mat-form-field>
+    </div>
+
+    <button mat-button type="submit" [disabled]="!form.valid">Submit</button>
+  </form>
+</div>

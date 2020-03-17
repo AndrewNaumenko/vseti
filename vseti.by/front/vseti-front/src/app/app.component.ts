@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })
-export class AppComponent {
-  title = 'vseti-front';
+
+export class AppComponent implements OnInit {
+  title = 'ui-order-entry';
+  ngOnInit(): void {
+  }
 }

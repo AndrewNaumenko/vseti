@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'vseti-front'`, () => {
+  it(`should have as title 'ui-order-entry'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('vseti-front');
+    expect(app.title).toEqual('ui-order-entry');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('vseti-front app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('ui-order-entry app is running!');
   });
 });

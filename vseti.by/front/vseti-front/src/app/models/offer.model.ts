@@ -1,6 +1,8 @@
 export interface OfferModel {
-  id: string;
-  name: string;
-  image: string;
-  price: string;
+  id: number;
+  title: string;
+  description: string;
+  price: number;
+  photo: string;
+  category: {category: string, id: number};
 }
