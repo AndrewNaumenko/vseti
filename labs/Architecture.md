@@ -48,7 +48,7 @@
   
 <a name="diagram"></a>
 ### 1.6 Диаграмма ToBe
-![](https://github.com/AndrewNaumenko/vseti/tree/master/%D0%94%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B/DeploymentDiagramToBeArchitecture.png)
+С диаграммой ToBe Architecture можно ознакомиться по следующей [ссылке](https://github.com/AndrewNaumenko/vseti/tree/master/%D0%94%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B/DeploymentDiagramToBeArchitecture.png)
 
 <a name="arc_analysis"></a>
 ## 2. Анализ архитектуры
@@ -71,12 +71,12 @@
 <a name='asIs'></a>  
 ### 2.2 Диаграмма AsIs
 
-![](https://github.com/AndrewNaumenko/vseti/tree/master/%D0%94%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B/DeploymentDiagramAsIsArchitecture.png)
+С диаграммой AsIs Architecture можно ознакомиться по следующей [ссылке](https://github.com/AndrewNaumenko/vseti/tree/master/%D0%94%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B/DeploymentDiagramAsIsArchitecture.png)
 
 <a name='class'></a>
 ### 2.3 Диаграмма классов
 
-![](https://github.com/AndrewNaumenko/vseti/tree/master/%D0%94%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B/Catalog_class_diagramm.png)
+С диаграммой классов можно ознакомиться по следующей [ссылке](https://github.com/AndrewNaumenko/vseti/tree/master/%D0%94%D0%B8%D0%B0%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D1%8B/Catalog_class_diagramm.png)
 
 <a name="compare"></a>
 ### 3. Сравнение As Is и To Be, пути улучшения архитектуры
