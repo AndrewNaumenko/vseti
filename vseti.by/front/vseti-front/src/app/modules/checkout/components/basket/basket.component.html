@@ -1,0 +1,12 @@
+<div class="catalog-container" *ngIf="(orderItems) && (orderItems.length !== 0)">
+  <div class="offers">
+    <app-basket-elem *ngFor="let item of orderItems" [item]="item" [role]="this.role">
+    </app-basket-elem>
+  </div>
+  <div class="total-sum">
+    <h2>Total order sum {{totalSum}}rub</h2>
+  </div>
+</div>
+<div *ngIf="!(orderItems) || (orderItems.length === 0)" class="empty-cart">
+  <h1>Your Shopping Cart is empty</h1>
+</div>

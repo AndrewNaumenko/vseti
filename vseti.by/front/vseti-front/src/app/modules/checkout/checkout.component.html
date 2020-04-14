@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div *ngIf="isLoading|async" class="parent-center">
+  <mat-spinner>
+  </mat-spinner>
+</div>
+<div *ngIf="!(isLoading|async)">
+  <mat-horizontal-stepper [linear]="true" #stepper>
+    <mat-step [completed] = "!isBasketEmpty()">
+      <ng-template matStepLabel>Basket overview</ng-template>
+      <app-basket [role]="'summary'" [orderItems]="this.orderItems" [totalSum]="this.totalSum"></app-basket>
+      <div *ngIf="!isBasketEmpty()" class="show-center">
+        <button mat-button class="confirm-button" (click)="cancelOrder()">Cancel Order</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+    <mat-step [stepControl]="deliveryForm">
+      <ng-template matStepLabel>Delivery information</ng-template>
+      <div class="delivery">
+        <app-delivery (deliveryEmitter)="emitForm($event)"></app-delivery>
+      </div>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Order confirmation</ng-template>
+      <div class="delivery-container">
+        <h1>Delivery information</h1>
+        <mat-card>
+          <mat-card-content>
+            <p><span>Customer:</span>{{this.user.name + ' ' + this.user.surname}}</p>
+            <p><span>Address:</span>{{this.deliveryForm.get('address').value}}</p>
+            <p><span>Email:</span>{{this.user.email}}</p>
+            <p><span>Phone number:</span>{{this.deliveryForm.get('phone').value}}</p>
+            <p><span>Payment type:</span>{{this.deliveryForm.get('paymentType').value}}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <h1>Basket information</h1>
+      <app-basket [role]="'confirmation'" [orderItems]="this.orderItems" [totalSum]="this.totalSum"></app-basket>
+      <div class="show-center">
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button class="confirm-button" (click)="confirmOrder()">Confirm Order</button>
+      </div>
+    </mat-step>
+  </mat-horizontal-stepper>
+</div>
