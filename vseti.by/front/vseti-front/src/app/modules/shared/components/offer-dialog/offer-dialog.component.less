@@ -1,0 +1,32 @@
+.dialog {
+  height: 81vh;
+  .content {
+    display: flex;
+    .info{
+      mat-form-field{
+        width: 100%;
+        textarea{
+          height: 100px;
+        }
+      }
+      width: 280px;
+      padding-top: 50px;
+      padding-right: 50px;
+      input[type=number]::-webkit-inner-spin-button,
+      input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+    .demo {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 400px));
+    }
+  }
+  .actions{
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+  }
+}
