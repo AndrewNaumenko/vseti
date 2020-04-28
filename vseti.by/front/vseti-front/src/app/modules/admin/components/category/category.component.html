@@ -1,0 +1,47 @@
+<mat-card>
+  <div *ngIf="this.status === 'show'">
+    <mat-card-content>
+      <div class="info">
+        <p>{{category.category}}</p>
+      </div>
+      <div class="functionality">
+        <p>
+          <button mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+        </p>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="modifyCategory()">
+            <mat-icon>build</mat-icon>
+            <span>Modify</span>
+          </button>
+          <button mat-menu-item (click)="deleteCategory()">
+            <mat-icon>delete</mat-icon>
+            <span>Delete</span>
+          </button>
+        </mat-menu>
+      </div>
+    </mat-card-content>
+  </div>
+
+  <div *ngIf="this.status === 'modify'">
+    <mat-card-content>
+      <div class="info">
+        <mat-form-field>
+          <input matInput placeholder="Category" [(ngModel)]="this.categoryInput">
+        </mat-form-field>
+      </div>
+
+      <div class="functionality">
+        <p>
+          <button mat-icon-button (click)="updateCategory()">
+            <mat-icon>check_circle_outline</mat-icon>
+          </button>
+          <button mat-icon-button (click)="cancelUpdate()">
+            <mat-icon>highlight_off</mat-icon>
+          </button>
+        </p>
+      </div>
+    </mat-card-content>
+  </div>
+</mat-card>
