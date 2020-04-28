@@ -1,0 +1,44 @@
+<div class="dialog">
+  <div class="content">
+    <div class="info">
+      <h1>
+        Fill offer information
+      </h1>
+      <form [formGroup]="offerFormGroup">
+        <mat-card-content>
+          <mat-form-field>
+            <input matInput placeholder="Title" [formControlName]="'title'" required>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput placeholder="Photo url" [formControlName]="'photo'" required>
+          </mat-form-field>
+          <mat-form-field>
+            <textarea matInput placeholder="Description" [formControlName]="'description'" required></textarea>
+          </mat-form-field>
+          <mat-form-field>
+            <input matInput type="number" min="0" placeholder="Price" [formControlName]="'price'" required>
+          </mat-form-field>
+          <div *ngIf="categoriesFromServer">
+            <mat-form-field>
+              <input matInput type="text" placeholder="Choose category" [formControlName]="'category'" [matAutocomplete]="auto" required>
+              <mat-autocomplete #auto="matAutocomplete" [displayWith]="display">
+                <mat-option *ngFor="let category of filteredCategories | async" [value]="category">
+                  {{category.category}}
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+          </div>
+        </mat-card-content>
+      </form>
+    </div>
+
+    <div class="demo">
+      <app-offer [offer]="this.offer" [role]="'demo'"></app-offer>
+    </div>
+
+  </div>
+  <div class="actions">
+    <button mat-button (click)="saveOffer()">Save</button>
+    <button mat-button (click)="closeDialog()">Close</button>
+  </div>
+</div>
