@@ -1,0 +1,15 @@
+<div class="content">
+  <div class="message">
+    <h2>Create category</h2>
+  </div>
+  <div class="modify">
+    <mat-form-field>
+      <input matInput placeholder="Category name" [(ngModel)]="this.category.category">
+    </mat-form-field>
+
+  </div>
+  <div class="actions">
+    <button mat-button (click)="save()">Save</button>
+    <button mat-button (click)="close()">Close</button>
+  </div>
+</div>
